@@ -6,40 +6,13 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
-      // {
-      //   "source": "index.html",
-      //   "destination": "index.php"
-      // }
+    "rewrites": [
       {
-        "source": "/index.html",
-        "destination": "/index.php",
-        "type": 301
-    },
-    {
-        "source": "/",
-        "destination": "/index.php",
-        "type": 301
-    }
+        "source": "**",
+        "destination": "/index.php"
+      }
     ]
   }
 }
 
 
-// {
-//   "hosting": {
-//       ...
-//       "redirects": [
-//           {
-//               "source": "/index.html",
-//               "destination": "/home.html",
-//               "type": 301
-//           },
-//           {
-//               "source": "/",
-//               "destination": "/home.html",
-//               "type": 301
-//           }
-//       ]
-//   }
-// }
