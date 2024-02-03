@@ -40,6 +40,7 @@ session_start();
     }
     </style>
     <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    
     <!--nav-->
     <div class="container-fluid p-0">
         <!--first child-->
@@ -63,7 +64,7 @@ session_start();
           <a class="nav-link" href="./users_area/user_registration.php">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup><?php cart_item();?></sup></a>
@@ -73,6 +74,7 @@ session_start();
         </li>
         
       </ul>
+ 
       <form class="d-flex" action="../search_product.php" method="get">
   <div class="col-auto mt-3 px-0">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
@@ -249,7 +251,7 @@ cart();
                             <div class="cont-right">
                                 <h6>
                                     Mail us:</h6>
-                                <p><a href="/cdn-cgi/l/email-protection#0b787e7b7b64797f4b666a626725686466" class="mail"><span class="__cf_email__" data-cfemail="d9aaaca9a9b6abad99b4b8b0b5f7bab6b4">ComfyBaby@gmail.com</span></a></p>
+                                <p><a href="" class="mail"><span class="__cf_email__" data-cfemail="d9aaaca9a9b6abad99b4b8b0b5f7bab6b4">ComfyBaby@gmail.com</span></a></p>
                                 <!-- <p><a href="/cdn-cgi/l/email-protection#96f5f9f8e2f7f5e2d6fbf7fffab8f5f9fb" class="mail"><span class="__cf_email__" data-cfemail="0b6864657f6a687f4b666a626725686466">[email&#160;protected]</span></a></p> -->
                             </div>
                         </div>
@@ -275,7 +277,8 @@ cart();
             <div class="map-iframe mt-5">
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe> -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15830.246999155637!2d80.61884155!3d7.290598749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae36886445162a9%3A0xb76bf09520c7826f!2sAnniewatta%2C%20Kandy!5e0!3m2!1sen!2slk!4v1702732536652!5m2!1sen!2slk" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-            </div>
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130737374.17730962!2d5.88032736905168!3d0.22326014106769743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSwitzerland!5e0!3m2!1sen!2slk!4v1706992263759!5m2!1sen!2slk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
         </div>
     </section>
     <!-- /contact-form-2 -->
