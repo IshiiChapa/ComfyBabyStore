@@ -8,9 +8,28 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.php"
+        "source": "index.html",
+        "destination": "index.php"
       }
     ]
   }
 }
+
+
+// {
+//   "hosting": {
+//       ...
+//       "redirects": [
+//           {
+//               "source": "/index.html",
+//               "destination": "/home.html",
+//               "type": 301
+//           },
+//           {
+//               "source": "/",
+//               "destination": "/home.html",
+//               "type": 301
+//           }
+//       ]
+//   }
+// }
