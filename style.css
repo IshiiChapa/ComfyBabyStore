@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    object-fit: contain;
+}
+.card{
+    border: none;
+}
+.card-title{
+    text-align: center;
+}
+.admin_image{
+    width: 100px;
+    object-fit: contain;
+}
+#carouselExampleRide {
+    max-height: 300px; /* Adjust the height as needed */
+  }
+
+  #carouselExampleRide .carousel-inner {
+    max-height: 100%; /* Ensure the carousel takes up the available height */
+  }
+
+  #carouselExampleRide .carousel-inner img {
+    height: 100%; /* Make sure the images take up the full height of the carousel */
+    object-fit: cover; /* Optional: maintain aspect ratio and cover the entire container */
+  }
+  
