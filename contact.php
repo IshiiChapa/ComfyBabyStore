@@ -144,11 +144,7 @@ cart();
       <div class="row">
                            
                                     
-<?php 
-get_all_home_products();
-get_unique_categories();
-get_unique_brands();
-?>
+
              <!-- row end-->
       </div>    
       <!-- column end -->
