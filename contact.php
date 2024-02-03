@@ -1,339 +1,214 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
-<!doctype html>
+<!-- connect file-->
+<?php
+include('includes/connect.php');
+include('functions/common_fucntion.php');
+session_start();
+?> 
+
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Comfy Baby Online Clothing Store | Contact </title>
-    <!-- google fonts -->
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Baby Clothing Store</title>
+    <!--bootstarp Css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-liberty.css">
+    <!--font -->
     <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!-- css file-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+    <script src="script.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
-
 <body>
-<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-(function(){
-if(typeof _bsa !== 'undefined' && _bsa) {
-	// format, zoneKey, segment:value, options
-	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-}
-})();
-</script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <style>
+    body{
+      overflow-x:hidden;
+    }
+    </style>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <!--nav-->
+    <div class="container-fluid p-0">
+        <!--first child-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid">
+    <img src="./images/logo.png" alt="" class="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="display_all.php">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./users_area/user_registration.php">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup><?php cart_item();?></sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Total Price: LKR <?php total_cart_price(); ?></a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="../search_product.php" method="get">
+  <div class="col-auto mt-3 px-0">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
+  </div>
+  <div class="col-auto mt-3 mr-0"> <!-- col-auto will take the minimum required space -->
+    <input type="submit" value="Search" class="btn btn-outline-info" name="search_data_product">
+  </div>
+  <ul class="navbar-nav me-auto">
+    
+  
+    <?php
 
-  gtag('config', 'G-98H8KRKT85');
-</script>
-
-<meta name="robots" content="noindex">
-<body><link rel="stylesheet" href="/assests/css/font-awesome.min.css">
-<!-- New toolbar-->
-<style>
-* {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-
-#w3lDemoBar.w3l-demo-bar {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  padding: 40px 5px;
-  padding-top:70px;
-  margin-bottom: 70px;
-  background: #0D1326;
-  border-top-left-radius: 9px;
-  border-bottom-left-radius: 9px;
-}
-
-#w3lDemoBar.w3l-demo-bar a {
-  display: block;
-  color: #e6ebff;
-  text-decoration: none;
-  line-height: 24px;
-  opacity: .6;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#w3lDemoBar.w3l-demo-bar span.w3l-icon {
-  display: block;
-}
-
-#w3lDemoBar.w3l-demo-bar a:hover {
-  opacity: 1;
-}
-
-#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
-  color: #e6ebff;
-}
-#w3lDemoBar.w3l-demo-bar .responsive-icons {
-  margin-top: 30px;
-  border-top: 1px solid #41414d;
-  padding-top: 40px;
-}
-#w3lDemoBar.w3l-demo-bar .demo-btns {
-  border-top: 1px solid #41414d;
-  padding-top: 30px;
-}
-#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
-  font-size: 26px;
-}
-#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
-  margin-bottom:0;
-}
-.toggle-right-sidebar span {
-  background: #0D1326;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #e6ebff;
-  border-radius: 50px;
-  font-size: 26px;
-  cursor: pointer;
-  opacity: .5;
-}
-.pull-right {
-  float: right;
-  position: fixed;
-  right: 0px;
-  top: 70px;
-  width: 90px;
-  z-index: 99999;
-  text-align: center;
-}
-/* ============================================================
-RIGHT SIDEBAR SECTION
-============================================================ */
-
-#right-sidebar {
-  width: 90px;
-  position: fixed;
-  height: 100%;
-  z-index: 1000;
-  right: 0px;
-  top: 0;
-  margin-top: 60px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  overflow-y: auto;
+if(!isset($_SESSION['username'])){
+  echo "<li class='nav-item'>
+  <a class='nav-link text-secondary' href='#'> Welcome Guest </a>
+</li>";
+}else{
+ echo "<li class='nav-item text-secondary'>
+  <a class='nav-link' href='#'>Welcome ".$_SESSION['username']."</a>
+</li>";
 }
 
 
-/* ============================================================
-RIGHT SIDEBAR TOGGLE SECTION
-============================================================ */
+    if(!isset($_SESSION['username'])){
+       echo "<li class='nav-item text-secondary'>
+       <a class='nav-link' href='./users_area/user_login.php'>Login</a>
+     </li>";
+    }else{
+      echo "<li class='nav-item text-secondary'>
+       <a class='nav-link' href='./users_area/logout.php'>Logout</a>
+     </li>";
+    }
 
-.hide-right-bar-notifications {
-  margin-right: -300px !important;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
+    ?>
 
-
-
-@media (max-width: 992px) {
-  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
-      display: none;
-
-  }
-}
-@media (max-width: 767px) {
-  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
-      display: none;
-
-  }
-}
-@media (max-width: 568px) {
-  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
-      display: none;
-  }
-  #w3lDemoBar.w3l-demo-bar .responsive-icons {
-      margin-top: 0px;
-      border-top: none;
-      padding-top: 0px;
-  }
-  #right-sidebar,.pull-right {
-      width: 90px;
-  }
-  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
-      margin-bottom: 0;
-  }
-}
-</style>
-<div class="pull-right toggle-right-sidebar">
-<span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
-</div>
-
-<div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
-<div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
-    <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
-        style="overflow: hidden; outline: none;">
+  </ul>
+</form>
+      
     </div>
-</div>
-</div>
-</div>
+  </div>
+</nav>
 
-      <!--/Header-->
-      <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
-                        <a href="index.html"><img src="images/logo.png" alt=""/></a>
-                    </a></h1>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Home</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li> -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#Pages" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop <span class="fa fa-angle-down ms-1"></span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item pt-2" href="products.html">Products</a></li>
-                                <li><a class="dropdown-item" href="categories.html">Categories</a></li>
-                                <li><a class="dropdown-item" href="virtualfiton.html">Virtual Fiton</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Connect</a>
-                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item pt-2" href="about.html">About</a></li>
-                            </ul> -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#Pages" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Help <span class="fa fa-angle-down ms-1"></span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item pt-2" href="size.html">Size Guide</a></li>
-                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                <!-- <li><a class="dropdown-item" href="elements.html">Shipping Information</a></li> -->
-                                <li><a class="dropdown-item" href="assets/Documents/Returns Policy.pdf">Returns and Exchange Policy</a></li>
-                                <li><a class="dropdown-item" href="assets/Documents/Terms and Conditions.pdf">Terms and Conditions</a></li>
-                                <li><a class="dropdown-item" href="assets/Documents/Privacy policy.pdf">Privacy Policy</a></li>
-                                <li><a class="dropdown-item" href="assets/Documents/FAQ.pdf">FAQ</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                    <li class="nav-item search-right">
-                        <a href="#search" class="btn search-btn" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span></a>
-                        <!-- search popup -->
-                        <div id="search" class="pop-overlay">
-                            <div class="popup">
-                                <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
-                                <form action="#" method="GET" class="search-box d-flex position-relative">
-                                    <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
-                                    <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
-                                </form>
-                            </div>
-                            <a class="close" href="#close">×</a>
-                        </div>
-                        <!-- /search popup -->
-                    </li>
-<!--/search-right-->
-                </div>
-                <ul class="header-search me-lg-4 d-flex">
-                    <li class="get-btn me-2">
-                        <a href="login.html" class="btn btn-style btn-primary" title="search"><i class="fas fa-user me-lg-2"></i> <span class="btn-texe-inf">Login</span></a>
-                    </li>
-                    <li class="shopvcart galssescart2 cart cart box_1 get-btn">
-                        <form action="#" method="post" class="last">
-                            <input type="hidden" name="cmd" value="_cart">
-                            <input type="hidden" name="display" value="1">
-                            <button class="top_shopv_cart" type="submit" name="submit" value="">
-                                <span class="fas fa-shopping-bag me-lg-2"></span> <span class="btn-texe-inf">Cart</span>
+<!-- calling cart function -->
+<?php
+cart();
+?>
+<!--second child comment for my own design -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <ul class="navbar-nav me-auto">
+    <li class="nav-item">
+          <a class="nav-link text-secondary" href="#"> Welcome Guest </a>
+        </li>  
+        <li class="nav-item text-secondary">
+          <a class="nav-link" href="#">Login</a>
+        </li>  
+    </ul>
+</nav> -->
 
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-                <!--//search-right-->
-                <!-- toggle switch for light and dark theme -->
-                <div class="mobile-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
-            </nav>
-        </div>
-    </header>
-    <!--//Header-->
-    <section class="w3mid-gap"></section>
-    <!--/Banner-Start-->
-    <!--/inner-page-->
-    <div class="inner-banner py-5">
-        <section class="w3l-breadcrumb text-left py-sm-5 ">
-            <div class="container">
-                <div class="w3breadcrumb-gids">
-                    <div class="w3breadcrumb-left text-left">
-                     
-                    </div>
-                    <div class="w3breadcrumb-right">
 
-                    </div>
-                </div>
+<!-- New Navigation Open -->  
 
-            </div>
-        </section>
-    </div>
-    <!--//inner-page-->
-<div style="margin: 8px auto; display: block; text-align:center;">
+<section class="w3l-ecommerce-main mx-4">
+        <!-- /products-->
+
+                        
+    <div class="row px-1">
+      <div class="col-md-12 mx-auto">
+    <!-- all products -->
+      <div class="row">
+                           
+                                    
+<?php 
+get_all_home_products();
+get_unique_categories();
+get_unique_brands();
+?>
+             <!-- row end-->
+      </div>    
+      <!-- column end -->
+  </div>
+    </section>
+
+
+  <!-- New Navigation close -->
+
+
+<!-- Old Nav start -->
+<!--fourth child--->
+<!-- <div class="row px-1">
+   <div class="col-md-10">
+     all products -->
+      <!-- <div class="row">  -->
+<!-- fetching products -->
+      <?php
+      //calling function
+// getproducts();
+// get_unique_categories();
+// get_unique_brands();
+// $ip = getIPAddress();  
+// echo 'User Real IP Address - '.$ip;  
+      ?>
+        <!-- row end-->
+      <!-- </div>     -->
+      <!-- column end -->
+  <!-- </div> -->
+ <!-- Staring side navigation bar -->
+ <!-- <div class="col-md-2 bg-secondary p-0">
+     brands to be displayed-->
+    <!-- <ul class="navbar-nav me-auto text-center">
+        <li class="nav-item bg-info">
+            <a href="#" class="nav-link text-light"><h4>Delivery Brands</h4>
+            </a>
+        </li>  -->
+<?php
+// getbrands();
+?>
+    <!-- </ul> -->
+    <!--categories to be displayed-->
+    <!-- <ul class="navbar-nav me-auto text-center">
+        <li class="nav-item bg-info">
+            <a href="#" class="nav-link text-light"><h4>Categories</h4>
+            </a>
+        </li> -->
+<?php
+// getcategories();
+?>   
+    <!-- </ul>
+    side nav-->
+   <!-- </div>Ending side navigation bar -->
+<!-- </div>  -->
+<!--old Nav End -->
+
+
+
+   <!--//inner-page-->
+   <div style="margin: 8px auto; display: block; text-align:center;">
 
 <!---728x90--->
 
@@ -576,6 +451,16 @@ RIGHT SIDEBAR TOGGLE SECTION
     <script src="assets/js/bootstrap.min.js"></script>
 
 
-</body>
 
+<!-- last child -->
+<!-- include footer-->
+<?php   include("./includes/footer.php")   ?>
+    </div>
+
+
+  <!--bootstarp js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+  crossorigin="anonymous"></script>
+</body>
 </html>
