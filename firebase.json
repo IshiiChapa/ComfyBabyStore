@@ -6,11 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
+    "redirects": [
+      // {
+      //   "source": "index.html",
+      //   "destination": "index.php"
+      // }
       {
-        "source": "index.html",
-        "destination": "index.php"
-      }
+        "source": "/index.html",
+        "destination": "/index.php",
+        "type": 301
+    },
+    {
+        "source": "/",
+        "destination": "/index.php",
+        "type": 301
+    }
     ]
   }
 }
